@@ -1,6 +1,6 @@
 function capitalize() {
     return function(arr) {
-        var arr = insult.split("");
+        var arr = arr.split("");
         arr[0] = arr[0].toUpperCase();
         for (var i = 0; i < arr.length; i++) {
             if (arr[i] == " " || arr[i] == "-") {
@@ -8,7 +8,7 @@ function capitalize() {
             }
         }
         return arr.join('');
-    };
-}
+    }
+};
 
 angular.module('insultApp').filter('capitalize', capitalize)
